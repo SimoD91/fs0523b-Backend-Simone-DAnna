@@ -22,6 +22,7 @@ public class ArrayClass {
 
         for(int i=0; i< giorniSettimana.length; i++){
             System.out.println(giorniSettimana[i]);
+            System.out.println(giorniSettimana[i]);
         }
     }
 }

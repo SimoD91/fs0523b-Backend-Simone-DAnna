@@ -46,10 +46,6 @@ public class Dipendente {
         return livello;
     }
 
-    public Dipartimento getDipartimento() {
-        return dipartimento;
-    }
-
     public void setImportoOrarioStraordinario(double importoOrarioStraordinario) {
         this.importoOrarioStraordinario = importoOrarioStraordinario;
     }

@@ -1,0 +1,10 @@
+select * from public.clienti;
+select * from public.fatture;
+select * from public.fornitori;
+select * from public.prodotti;
+select * from public.clienti where nome = 'Mario';
+select nome, cognome, anno_di_nascita from public.clienti where extract (year from anno_di_nascita) = 1982;
+select numerofattura from public.fatture where iva = 20;
+select * from public.prodotti where extract (year from data_attivazione) = 2017 and (in_produzione = true or in_commercio = true);
+select * from public.fatture f inner join public.clienti c on f.id_cliente = c.numero_cliente where importo<999;
+select numerofattura, importo, iva, data_fattura, denominazione from public.fatture f inner join public.fornitori e on f.numero_fornitore = e.numero_fornitore;
